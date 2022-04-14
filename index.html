@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google</title>
+    </head>
+    <style>
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+		li {
+			list-style-type: none;
+			padding: 0 10px;
+		}
+		a{
+			text-decoration: none;
+			font-size: 13px;
+		}
+		.header {
+			display: flex;
+			height: 3em;
+		}
+		.header a {
+			color: black;
+		}
+		.header  ul {
+			display: flex;
+			flex-grow: 1;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 0 15px;
+		}
+		.section {
+			height: 75vh;
+		}
+		.image_container {
+			display: flex;
+			justify-content: center;
+
+		}
+		.image_container img{
+			width: 100%;
+			max-width: 271px;
+			padding-top: 109px; 
+		}
+		.search_bar {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.search_bar input {
+			width: 300px;
+			height: 30px;
+			border: 1px solid black;
+			padding-left: 50px;
+			margin: 10px 0;
+		}
+		.search_buttons {
+			display: flex;
+			justify-content: center;
+		}
+		.search_buttons input {
+			border: 1px solid black;
+			margin: 11px 4px;
+			padding: 0 16px;   
+			line-height: 27px;
+			height: 36px;
+		}
+	</style>
+    <body>
+        <div class="header">
+            <ul>
+                <li><a href="image_search.html">Search Images</a></li>
+                <li><a href="advanced_search.html">Advanced Search</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="image_container"><img src="google_img.png"></div>
+            <form action="https://google.com/search" method="POST">
+                <div class="search_bar">
+                    <input type="text">
+                </div>
+                <div class="search_buttons">
+                    <input type="submit" value="Google Search">
+                    <input type="submit" value="I'm Feeling Lucky">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
